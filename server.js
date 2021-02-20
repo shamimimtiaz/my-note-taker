@@ -1,23 +1,21 @@
-//dependencies
-const express = require ('express');
-const fs = require ('fs');
-const path = require ('path');
+// Require Dependencies
+const express = require("express");
+const fs = require("fs");
+const path = require('path');
 
-//To initiate the server
+// Initialize express app
 const app = express();
 const PORT = process.env.PORT || 3003;
 
-// Use express'js middle middleware function to get access CSS and JS file
-app.use(express.static(__dirname));
-// parse incoming string or array data
-app.use(express.urlencoded({extended: true}));
-// parse incoming JSON data
+// Setup data parsing
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(__dirname + '/public'));
+app.use(express.static('./'));
+//Require routes file
+require('./routes/routes')(app);
 
-require('./routes/apiRoutes.js')(app);
-//require('./routes/htmlRoutes.js')(app);
-
-
-app.listen (PORT, () => {
-    console.log (`API server on port ${PORT}!`);
-});
+// Setup listener
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+});  

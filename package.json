@@ -1,22 +1,13 @@
 {
-  "name": "my-note-taker",
+  "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shamimimtiaz/my-note-taker.git"
-  },
-  "keywords": [],
-  "author": "Shamim",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shamimimtiaz/my-note-taker/issues"
-  },
-  "homepage": "https://github.com/shamimimtiaz/my-note-taker#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
