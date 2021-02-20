@@ -12,6 +12,7 @@
 * CONTRIBUTING
 * TESTS
 * FILES AND FOLDERS
+* LINK
 * CONTACT
 * DEMO
 
@@ -49,8 +50,11 @@ Files & folders structure
 *routes	: routes.js
 *server.js
 
+## Link
+* github link :https://github.com/shamimimtiaz/my-note-taker.git
+* weblink : https://mynotetakr.herokuapp.com/
 
-### Questions and Contact:
+## Questions and Contact:
 Shamim Imtiaz
 km_si@ymail.com
 
